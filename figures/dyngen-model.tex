@@ -1,0 +1,13 @@
+\begin{tabular}{lr|lr}
+\hline
+\textbf{Engine} & \textbf{Build (s)} & \textbf{Method} & \textbf{Runtime (s/traj.)} \\
+\hline
+dyngen & 320.7 & tau-leaping, fixed $\tau$, clamped negatives & 26.7 \\
+\hline
+\thetool{} & 88.4 & tau-leaping, fixed $\tau$, clamped negatives & 40.7 \\
+ &  & tau-leaping, fixed $\tau$, thinned negatives & 67.2 \\
+ &  & adaptive tau-leaping, $\epsilon = 0.05$ & 111.8 \\
+ &  & hybrid, fixed $\tau$, threshold $n_c = 10$ & 425.9 \\
+ &  & exact SSA (TauSplitting) & 884.4 \\
+\hline
+\end{tabular}

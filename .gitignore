@@ -1,0 +1,7 @@
+.make/
+.venv/
+renv/library/
+runs/
+__pycache__
+models/build/
+figures/*.pdf

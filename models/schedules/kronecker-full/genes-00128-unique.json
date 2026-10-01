@@ -1,0 +1,112 @@
+{
+  "duration": 172800.0,
+  "k": 7,
+  "method": "RSSACR",
+  "num_reps": 1,
+  "sample_interval": 17280.0,
+  "step": {
+    "do": {
+      "{regulation/kronecker}": {
+        "activation": {
+          "adjacency": {
+            "expected_links_per_gene": 0.8,
+            "initiator": [
+              [
+                0.8,
+                0.3
+              ],
+              [
+                0.2,
+                0.5
+              ]
+            ],
+            "power": {
+              "$": "k"
+            }
+          },
+          "at": [
+            "LogNormal",
+            8.5,
+            1.0
+          ]
+        },
+        "base_rates": {
+          "abortion": 0.01,
+          "activation": 0.0003,
+          "deactivation": 0.002,
+          "initiation": 1.93e-7,
+          "mrna_decay": 6.4e-5,
+          "premrna_decay": 0.001,
+          "processing": 0.02,
+          "protein_decay": 2.4e-11,
+          "transcription": 0.001,
+          "translation": 7.2e-9
+        },
+        "method": {
+          "$": "method"
+        },
+        "profile_reactions": false,
+        "repression": {
+          "adjacency": {
+            "expected_links_per_gene": 1.2,
+            "initiator": [
+              [
+                0.3,
+                0.6
+              ],
+              [
+                0.4,
+                0.1
+              ]
+            ],
+            "power": {
+              "$": "k"
+            }
+          },
+          "at": [
+            "LogNormal",
+            8.5,
+            1.0
+          ]
+        },
+        "seed": "seed-1",
+        "species": [
+          "active",
+          "elongations",
+          "premrnas",
+          "mrnas",
+          "proteins"
+        ],
+        "unique": true
+      }
+    },
+    "step": [
+      {
+        "{add}": {
+          "polymerases": 500000.0,
+          "proteasomes": 1.0e6,
+          "ribosomes": 2.0e6
+        }
+      },
+      {
+        "branch": true,
+        "step": {
+          "each": {
+            "start": 1,
+            "stop": {
+              "$": "num_reps"
+            }
+          },
+          "step": {
+            "step": {
+              "$": "sample_interval"
+            },
+            "to": {
+              "$": "duration"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

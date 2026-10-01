@@ -1,0 +1,3123 @@
+{
+  "method": "RSSACR",
+  "num_reps": 10,
+  "duration": 552,
+  "sample_interval": 55.200000000000003,
+  "step": {
+    "do": {
+      "{regulation/v1}": {
+        "method": {
+          "$": "method"
+        },
+        "species": ["premrnas", "mrnas", "proteins"],
+        "genes": [
+          {
+            "name": "A1_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.3078514020889998e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.9230061335256326e-05,
+              "abortion": 0,
+              "premrna_decay": 0.1632519414247065,
+              "mrna_decay": 0.1632519414247065,
+              "protein_decay": 7.3440133090922257e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "E3_TF1",
+                  "at": 50676.264373135389,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "E1_TF1",
+                  "at": 14325.583806372852,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#FF9999"
+          },
+          {
+            "name": "B1_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 2.0739482478238642e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.9719280669232824e-05,
+              "abortion": 0,
+              "premrna_decay": 0.18107329846862777,
+              "mrna_decay": 0.18107329846862777,
+              "protein_decay": 8.1585799519183947e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 55544.396560435875,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#EBFF99"
+          },
+          {
+            "name": "B2_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 2.876252172049135e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.4038367179455229e-05,
+              "abortion": 0,
+              "premrna_decay": 0.19829787172099028,
+              "mrna_decay": 0.19829787172099028,
+              "protein_decay": 1.2858546509663961e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "B1_TF1",
+                  "at": 32144.295656141167,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#CCFF00"
+          },
+          {
+            "name": "A2_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.6747137852944432e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.1479921094141904e-05,
+              "abortion": 0,
+              "premrna_decay": 0.25883943349120042,
+              "mrna_decay": 0.25883943349120042,
+              "protein_decay": 1.0697053669126869e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "B1_TF1",
+                  "at": 10164.918805526268,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#FF4D4D"
+          },
+          {
+            "name": "A3_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.3661518888548017e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.5818532017292457e-05,
+              "abortion": 0,
+              "premrna_decay": 0.18174297721822288,
+              "mrna_decay": 0.18174297721822288,
+              "protein_decay": 7.3041988052746657e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "B2_TF1",
+                  "at": 7264.8839988772306,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#FF0000"
+          },
+          {
+            "name": "C1_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 3.858833442442119e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.2804824314080181e-05,
+              "abortion": 0,
+              "premrna_decay": 0.21035634597012789,
+              "mrna_decay": 0.21035634597012789,
+              "protein_decay": 1.2430768073198568e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "B2_TF1",
+                  "at": 22973.580373364188,
+                  "k": -2
+                },
+                {
+                  "from": "C1_TF1",
+                  "at": 12123.024001795309,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 4110.5518673579181,
+                  "k": -2
+                },
+                {
+                  "from": "E1_TF1",
+                  "at": 10129.717453942438,
+                  "k": -2
+                },
+                {
+                  "from": "E3_TF1",
+                  "at": 16025.241872795277,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#99FFC2"
+          },
+          {
+            "name": "C2_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 3.4512691767886278e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.3310690576909108e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16682825059596773,
+              "mrna_decay": 0.16682825059596773,
+              "protein_decay": 1.11500460242626e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 24246.048003590618,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#4DFF94"
+          },
+          {
+            "name": "C3_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 3.4583581527695062e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.3196671352488924e-05,
+              "abortion": 0,
+              "premrna_decay": 0.21422459726227194,
+              "mrna_decay": 0.21422459726227194,
+              "protein_decay": 7.4569849785639344e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C2_TF1",
+                  "at": 45910.067969114614,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#00FF66"
+          },
+          {
+            "name": "D1_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 3.5958485589362682e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1146665443666275e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15758393054836364,
+              "mrna_decay": 0.15758393054836364,
+              "protein_decay": 1.3575101992463339e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "B2_TF1",
+                  "at": 22973.580373364188,
+                  "k": -2
+                },
+                {
+                  "from": "D1_TF1",
+                  "at": 20552.75933678959,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 2424.6048003590618,
+                  "k": -2
+                },
+                {
+                  "from": "E1_TF1",
+                  "at": 10129.717453942438,
+                  "k": -2
+                },
+                {
+                  "from": "E3_TF1",
+                  "at": 16025.241872795277,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#99C2FF"
+          },
+          {
+            "name": "D2_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 3.8962201667018233e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.7859107267577201e-05,
+              "abortion": 0,
+              "premrna_decay": 0.24074337161214407,
+              "mrna_decay": 0.24074337161214407,
+              "protein_decay": 7.8493669858773252e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 41105.518673579179,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#4D94FF"
+          },
+          {
+            "name": "D3_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 2.3388061211444439e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.2347196446498858e-05,
+              "abortion": 0,
+              "premrna_decay": 0.20877143959562117,
+              "mrna_decay": 0.20877143959562117,
+              "protein_decay": 1.1147089479055982e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D2_TF1",
+                  "at": 41281.510995170371,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#0066FF"
+          },
+          {
+            "name": "E1_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 2.3080136831849812e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.2560123656876388e-05,
+              "abortion": 0,
+              "premrna_decay": 0.17458365374413878,
+              "mrna_decay": 0.17458365374413878,
+              "protein_decay": 7.0407216697926898e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C3_TF1",
+                  "at": 42275.663907336413,
+                  "k": -2
+                },
+                {
+                  "from": "D3_TF1",
+                  "at": 16415.633827981277,
+                  "k": -2
+                },
+                {
+                  "from": "E1_TF1",
+                  "at": 20259.434907884875,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "E3_TF1",
+                  "at": 22663.114396816298,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#EB99FF"
+          },
+          {
+            "name": "E2_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 2.2671628952957688e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.1645191139541569e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14108913490249922,
+              "mrna_decay": 0.14108913490249922,
+              "protein_decay": 9.4580852577256207e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "E1_TF1",
+                  "at": 45301.473639762771,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#DB4DFF"
+          },
+          {
+            "name": "E3_TF1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 999999999999,
+              "initiation": 3.5325469039380548e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.7457309248857196e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15770822658387593,
+              "mrna_decay": 0.15770822658387593,
+              "protein_decay": 7.2449463307396066e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "E2_TF1",
+                  "at": 37216.115602212536,
+                  "k": -2
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#CC00FF"
+          },
+          {
+            "name": "Target1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.3508469625376164e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.3146678443299608e-05,
+              "abortion": 0,
+              "premrna_decay": 0.19782817481773204,
+              "mrna_decay": 0.19782817481773204,
+              "protein_decay": 1.3797745346661117e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A3_TF1",
+                  "at": 2130.7447927541939,
+                  "k": -1.6558684708762423
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target2",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.2485817186534402e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.534771483275108e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16319291957029078,
+              "mrna_decay": 0.16319291957029078,
+              "protein_decay": 7.266753151778267e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A3_TF1",
+                  "at": 28460.739557041252,
+                  "k": -3.2046466265215345
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target3",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.6974199800752104e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.298851120751351e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14160121587963598,
+              "mrna_decay": 0.14160121587963598,
+              "protein_decay": 9.6951832624149521e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A3_TF1",
+                  "at": 18442.072762189113,
+                  "k": -4.8731795546823289
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target4",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.3073642035014929e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.4569778976729133e-05,
+              "abortion": 0,
+              "premrna_decay": 0.17135453942809387,
+              "mrna_decay": 0.17135453942809387,
+              "protein_decay": 1.1456331612877933e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A3_TF1",
+                  "at": 11069.574992914104,
+                  "k": -3.3070752455760246
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target5",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.8768147211521862e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.1644236196298151e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16021860769007817,
+              "mrna_decay": 0.16021860769007817,
+              "protein_decay": 9.051977719468837e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A2_TF1",
+                  "at": 2964.2866045229625,
+                  "k": -1.8566199308055646
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target6",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.1583381169475614e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.9522124053910377e-05,
+              "abortion": 0,
+              "premrna_decay": 0.20315655430045423,
+              "mrna_decay": 0.20315655430045423,
+              "protein_decay": 1.3728228508285253e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "A2_TF1",
+                  "at": 9438.0318064251824,
+                  "k": -3.0568880523463511
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target7",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.829312793444842e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.0310151302255688e-05,
+              "abortion": 0,
+              "premrna_decay": 0.23104747118299801,
+              "mrna_decay": 0.23104747118299801,
+              "protein_decay": 1.2604819562444855e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "B2_TF1",
+                  "at": 4706.6680942685698,
+                  "k": -2.9036387110675315
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target8",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.3569816057570278e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.3892115190392357e-05,
+              "abortion": 0,
+              "premrna_decay": 0.19236232238944356,
+              "mrna_decay": 0.19236232238944356,
+              "protein_decay": 9.893728752580088e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "B2_TF1",
+                  "at": 9121.5929828869212,
+                  "k": -3.4700515790092004
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target9",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.6358555452898145e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.9026862044120209e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14903177131270398,
+              "mrna_decay": 0.14903177131270398,
+              "protein_decay": 7.2812304190439881e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "B2_TF1",
+                  "at": 11997.066917321061,
+                  "k": -2.9649843749922868
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target10",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.1330828256905078e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1322423464152964e-05,
+              "abortion": 0,
+              "premrna_decay": 0.22727860701345923,
+              "mrna_decay": 0.22727860701345923,
+              "protein_decay": 8.0935300509591968e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 17094.03660177267,
+                  "k": -4.6889728190993418
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target11",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.4330485807731746e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.0192751503782348e-05,
+              "abortion": 0,
+              "premrna_decay": 0.17193155045143108,
+              "mrna_decay": 0.17193155045143108,
+              "protein_decay": 1.0469821510335985e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 8606.8106565563121,
+                  "k": -1.8270105987464591
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target12",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.4276560437865555e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.5754132979782304e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14672673898625485,
+              "mrna_decay": 0.14672673898625485,
+              "protein_decay": 7.9857952722224705e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 12183.208016982539,
+                  "k": -1.8107136081428685
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target13",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 1,
+              "initiation": 3.4627093081362543e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.7557847106363623e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14368569565892345,
+              "mrna_decay": 0.14368569565892345,
+              "protein_decay": 7.4039585391234748e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 10176.110149795857,
+                  "k": -1.6298133461389541
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 16093.719442801343,
+                  "k": -2.5009518884373909
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target14",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.1848385287448766e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.490833141375333e-05,
+              "abortion": 0,
+              "premrna_decay": 0.2284236976420963,
+              "mrna_decay": 0.2284236976420963,
+              "protein_decay": 7.5714240468398218e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 7367.7900970482042,
+                  "k": -3.6671873266345179
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target15",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.2959142765030265e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.3198687764815992e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14675079693782206,
+              "mrna_decay": 0.14675079693782206,
+              "protein_decay": 1.2050414352983091e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 9319.3116721712377,
+                  "k": -3.0715187460847844
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target16",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.5129294004291299e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1959803544450549e-05,
+              "abortion": 0,
+              "premrna_decay": 0.26481716211634826,
+              "mrna_decay": 0.26481716211634826,
+              "protein_decay": 1.0881749618179966e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C1_TF1",
+                  "at": 8588.9487916903145,
+                  "k": -2.3051715612627088
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target17",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.9405815228819849e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.2560238547157501e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15504459272081308,
+              "mrna_decay": 0.15504459272081308,
+              "protein_decay": 7.5946346696386412e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 6327.2018880763435,
+                  "k": -1.7907022594656916
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target18",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.6675211437977848e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.3416666650446134e-05,
+              "abortion": 0,
+              "premrna_decay": 0.26222228758916372,
+              "mrna_decay": 0.26222228758916372,
+              "protein_decay": 1.2418924826475987e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 3501.423485027598,
+                  "k": -1.1946062652687641
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target19",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.1849481747485698e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.6356997436378147e-05,
+              "abortion": 0,
+              "premrna_decay": 0.13887636179635118,
+              "mrna_decay": 0.13887636179635118,
+              "protein_decay": 7.9565042945889214e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 22872.371334934982,
+                  "k": -4.2457040470275009
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target20",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.9512147475034e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.7250893707387143e-05,
+              "abortion": 0,
+              "premrna_decay": 0.26739439758131001,
+              "mrna_decay": 0.26739439758131001,
+              "protein_decay": 1.1157036841826642e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 14323.173523742258,
+                  "k": -3.3048835772376006
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target21",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.2443573749624194e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.2850075113819917e-05,
+              "abortion": 0,
+              "premrna_decay": 0.13906397899826212,
+              "mrna_decay": 0.13906397899826212,
+              "protein_decay": 1.2744772041207545e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 26699.360300044391,
+                  "k": -2.9733037497378518
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target22",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.4515309859998524e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.7877373623196035e-05,
+              "abortion": 0,
+              "premrna_decay": 0.20468754710081216,
+              "mrna_decay": 0.20468754710081216,
+              "protein_decay": 1.0774955359685031e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 31971.260349862427,
+                  "k": -1.556603527481065
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target23",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.0464348192326723e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.3382729769218711e-05,
+              "abortion": 0,
+              "premrna_decay": 0.20434326075736423,
+              "mrna_decay": 0.20434326075736423,
+              "protein_decay": 9.070471204017896e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 39040.171659855812,
+                  "k": -1.4385011881185217
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target24",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.0768748018890617e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.2881197107490151e-05,
+              "abortion": 0,
+              "premrna_decay": 0.1535849983598564,
+              "mrna_decay": 0.1535849983598564,
+              "protein_decay": 9.6151021714507862e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 5612.131996147592,
+                  "k": -1.5838250318253473
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target25",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.3475675587542355e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.9714025966823097e-05,
+              "abortion": 0,
+              "premrna_decay": 0.20282402474485711,
+              "mrna_decay": 0.20282402474485711,
+              "protein_decay": 7.0678107426506047e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "A1_TF1",
+                  "at": 14380.891250708461,
+                  "k": -2.6972300569154015
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target26",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.2292424901388585e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.267736771493219e-05,
+              "abortion": 0,
+              "premrna_decay": 0.25386955327968364,
+              "mrna_decay": 0.25386955327968364,
+              "protein_decay": 7.589148465887949e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C2_TF1",
+                  "at": 13413.178480623692,
+                  "k": -1.5995571838786828
+                },
+                {
+                  "from": "D1_TF1",
+                  "at": 14539.138424561377,
+                  "k": -1.7162036200605941
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target27",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.6577960862778129e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.1471411777893082e-05,
+              "abortion": 0,
+              "premrna_decay": 0.1410546967510812,
+              "mrna_decay": 0.1410546967510812,
+              "protein_decay": 1.1236620742929191e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C2_TF1",
+                  "at": 19260.773089314629,
+                  "k": -2.2029345273181642
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target28",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.7512678615748884e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.8562639318406576e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15552426269244651,
+              "mrna_decay": 0.15552426269244651,
+              "protein_decay": 1.0484102871976171e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C2_TF1",
+                  "at": 45123.169334010701,
+                  "k": -3.1833415543444934
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target29",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.7176975458860399e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.0516127038281413e-05,
+              "abortion": 0,
+              "premrna_decay": 0.19730815588305983,
+              "mrna_decay": 0.19730815588305983,
+              "protein_decay": 1.0861535085162924e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C2_TF1",
+                  "at": 9556.939860592589,
+                  "k": -1.4552443545210143
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target30",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.4526833351701496e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.8226814586669203e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15608022510678762,
+              "mrna_decay": 0.15608022510678762,
+              "protein_decay": 1.1255925076603237e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C2_TF1",
+                  "at": 23408.379837946482,
+                  "k": -5.5523359465756483
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target31",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.25747722806409e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.23836400359869e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15687028811537956,
+              "mrna_decay": 0.15687028811537956,
+              "protein_decay": 8.8067773389418092e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "C2_TF1",
+                  "at": 13135.920108087174,
+                  "k": -2.0812338457475712
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target32",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.4547035787254575e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1439335378818214e-05,
+              "abortion": 0,
+              "premrna_decay": 0.2322829273869077,
+              "mrna_decay": 0.2322829273869077,
+              "protein_decay": 7.4954207501500025e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 25823.250979285927,
+                  "k": -2.8255275218213169
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target33",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.1211798642762004e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.0536538434680553e-05,
+              "abortion": 0,
+              "premrna_decay": 0.27333809216714505,
+              "mrna_decay": 0.27333809216714505,
+              "protein_decay": 7.6640290818964853e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 37981.458275999546,
+                  "k": -5.3637592335796107
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target34",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.7235569125041363e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.4217689697397879e-05,
+              "abortion": 0,
+              "premrna_decay": 0.13876538410777164,
+              "mrna_decay": 0.13876538410777164,
+              "protein_decay": 7.7931012591187574e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 34217.167452260801,
+                  "k": -3.9485209207139533
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target35",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.4545000186190008e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.3484075409360225e-05,
+              "abortion": 0,
+              "premrna_decay": 0.214370279356035,
+              "mrna_decay": 0.214370279356035,
+              "protein_decay": 8.0671841596485804e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 23025.891288034094,
+                  "k": -4.1546208865721947
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target36",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.6648343694396317e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.1700397037202495e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16815173860321417,
+              "mrna_decay": 0.16815173860321417,
+              "protein_decay": 1.3417935023112519e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 16640.05278650418,
+                  "k": -3.3132254413181412
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target37",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.3999215564690532e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.5842886298196385e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15390107205388101,
+              "mrna_decay": 0.15390107205388101,
+              "protein_decay": 1.253118601270285e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 33478.369607949215,
+                  "k": -2.1545450214244291
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target38",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.2334817242808643e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.9201774169923735e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16747942462431603,
+              "mrna_decay": 0.16747942462431603,
+              "protein_decay": 1.0735325633792635e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 34124.55826483242,
+                  "k": -3.886940655622384
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target39",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.0820790329016742e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.6099957163678482e-05,
+              "abortion": 0,
+              "premrna_decay": 0.23884724125434945,
+              "mrna_decay": 0.23884724125434945,
+              "protein_decay": 7.6374836053090286e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 23206.180083562402,
+                  "k": -3.1639121821728136
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target40",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.8384685423225166e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.4713753346586599e-05,
+              "abortion": 0,
+              "premrna_decay": 0.13978266588124219,
+              "mrna_decay": 0.13978266588124219,
+              "protein_decay": 1.0149526707747458e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 27705.864946597976,
+                  "k": -3.1010147562343926
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target41",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.9767852653749287e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.0293123713927341e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16626619942812668,
+              "mrna_decay": 0.16626619942812668,
+              "protein_decay": 1.049971209508691e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 2535.2104125793421,
+                  "k": -1.6410840812837086
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target42",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.5481348172761497e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.0759703188668935e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15737863454465131,
+              "mrna_decay": 0.15737863454465131,
+              "protein_decay": 1.2715951050749725e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D1_TF1",
+                  "at": 17768.980129618532,
+                  "k": -2.4631632978205746
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "Target43",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.8281845538876953e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.7160919739399103e-05,
+              "abortion": 0,
+              "premrna_decay": 0.20403593641405168,
+              "mrna_decay": 0.20403593641405168,
+              "protein_decay": 8.1988866993891041e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "D2_TF1",
+                  "at": 5490.504964548727,
+                  "k": -2.1729431828650441
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#A9A9A9"
+          },
+          {
+            "name": "HK1",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.3460212410427632e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.2557760146446524e-05,
+              "abortion": 0,
+              "premrna_decay": 0.24618300655466435,
+              "mrna_decay": 0.24618300655466435,
+              "protein_decay": 1.0613680303283499e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 8098.0587152910339,
+                  "k": -2.5335864866185345
+                },
+                {
+                  "from": "HK3",
+                  "at": 24260.555264504568,
+                  "k": -2.1830191450232483
+                },
+                {
+                  "from": "HK4",
+                  "at": 51345.583529793294,
+                  "k": -3.0959687191375891
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK2",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.1196525651030242e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.2030604656320064e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16294280165758832,
+              "mrna_decay": 0.16294280165758832,
+              "protein_decay": 1.2130968673241241e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK3",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.4701898866333069e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.1076939079212026e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15991369788189061,
+              "mrna_decay": 0.15991369788189061,
+              "protein_decay": 8.288095347925876e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK4",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.6482688598334786e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1779915050137786e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15513229123477129,
+              "mrna_decay": 0.15513229123477129,
+              "protein_decay": 6.9508908741611611e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK5",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.6974145802669227e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.056031908723526e-05,
+              "abortion": 0,
+              "premrna_decay": 0.20446741361308257,
+              "mrna_decay": 0.20446741361308257,
+              "protein_decay": 1.0598883062310735e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 18785.962215419619,
+                  "k": -4.8005222623291459
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK6",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.118431049399078e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.9353877970715985e-05,
+              "abortion": 0,
+              "premrna_decay": 0.27573255731510038,
+              "mrna_decay": 0.27573255731510038,
+              "protein_decay": 1.0088905107393235e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 30381.906095210106,
+                  "k": -1.9217720909672431
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK7",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.4356031743809582e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.312549783615395e-05,
+              "abortion": 0,
+              "premrna_decay": 0.23281630680000553,
+              "mrna_decay": 0.23281630680000553,
+              "protein_decay": 1.2795309760714688e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 24533.102908688739,
+                  "k": -5.2193338159160643
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK8",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.3910410623066127e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1199613343924281e-05,
+              "abortion": 0,
+              "premrna_decay": 0.24948492382504356,
+              "mrna_decay": 0.24948492382504356,
+              "protein_decay": 7.1607953313292582e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 5551.9346164802228,
+                  "k": -1.5854233124421677
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK9",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.2081019417382775e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.8524589238222691e-05,
+              "abortion": 0,
+              "premrna_decay": 0.19226191271895254,
+              "mrna_decay": 0.19226191271895254,
+              "protein_decay": 7.8039466094657968e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 8742.5844994732979,
+                  "k": -2.0870413343173762
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK10",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.2658378998748958e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.5315048547927296e-05,
+              "abortion": 0,
+              "premrna_decay": 0.27040354586704091,
+              "mrna_decay": 0.27040354586704091,
+              "protein_decay": 8.7623435732425716e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 17558.913616940928,
+                  "k": -5.836932946331677
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK11",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.9619275294244288e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.3033905683550987e-05,
+              "abortion": 0,
+              "premrna_decay": 0.22659685830094489,
+              "mrna_decay": 0.22659685830094489,
+              "protein_decay": 7.7197361205044335e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 2930.1165970307129,
+                  "k": -1.4473918217059349
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK12",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.9034338742494582e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.2444093563826752e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14426370054230603,
+              "mrna_decay": 0.14426370054230603,
+              "protein_decay": 7.4581517116250634e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 10936.513536301234,
+                  "k": -4.0743330904603532
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK13",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.6699991826899351e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.9839463173411781e-05,
+              "abortion": 0,
+              "premrna_decay": 0.24547089910090278,
+              "mrna_decay": 0.24547089910090278,
+              "protein_decay": 8.4135538915344061e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 12944.409265260558,
+                  "k": -4.3274676476621785
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK14",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.4013069840148091e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.1745291188126427e-05,
+              "abortion": 0,
+              "premrna_decay": 0.2096180767757479,
+              "mrna_decay": 0.2096180767757479,
+              "protein_decay": 7.2000149460586507e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 17341.830579830523,
+                  "k": -2.0857396676260258
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK15",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.1977977319620552e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.6426334623247382e-05,
+              "abortion": 0,
+              "premrna_decay": 0.23989715413869089,
+              "mrna_decay": 0.23989715413869089,
+              "protein_decay": 9.8293563411871898e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 17206.900776323771,
+                  "k": -5.1252516989822876
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK16",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.5167322219349443e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.4151265935506677e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14370858622081406,
+              "mrna_decay": 0.14370858622081406,
+              "protein_decay": 7.0977736448075265e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 18369.200023936184,
+                  "k": -5.5452809555922409
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK17",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.1953287641517817e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.2406193270580839e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15998987381978047,
+              "mrna_decay": 0.15998987381978047,
+              "protein_decay": 1.0067593139716591e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 22091.676769380621,
+                  "k": -3.286282372921141
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK18",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.1101410980336371e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.041831982787698e-05,
+              "abortion": 0,
+              "premrna_decay": 0.21244505999178664,
+              "mrna_decay": 0.21244505999178664,
+              "protein_decay": 9.0457882752837944e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 15743.690834180474,
+                  "k": -3.9509924669959102
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK19",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.2907981867901982e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1265034953830767e-05,
+              "abortion": 0,
+              "premrna_decay": 0.27368872322644611,
+              "mrna_decay": 0.27368872322644611,
+              "protein_decay": 1.0167688149243127e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 3746.8026297573524,
+                  "k": -2.0100540033528578
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK20",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.1136906486935915e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.133363345288672e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14423364018620596,
+              "mrna_decay": 0.14423364018620596,
+              "protein_decay": 1.0324527261904677e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 23712.709056990308,
+                  "k": -1.4527697696444528
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK21",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.344801708124578e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.4747183383442459e-05,
+              "abortion": 0,
+              "premrna_decay": 0.21650920158594236,
+              "mrna_decay": 0.21650920158594236,
+              "protein_decay": 1.2371525748680916e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 1216.6840734504574,
+                  "k": -1.3774761445336232
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK22",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.3427668921649453e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.0774292540736499e-05,
+              "abortion": 0,
+              "premrna_decay": 0.18405034357642272,
+              "mrna_decay": 0.18405034357642272,
+              "protein_decay": 8.5896842039478896e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 4930.6488761650126,
+                  "k": -1.9786413171623889
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK23",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.2423770162276925e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.1864524817792702e-05,
+              "abortion": 0,
+              "premrna_decay": 0.26789353990386244,
+              "mrna_decay": 0.26789353990386244,
+              "protein_decay": 1.1452652187673626e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 6235.9827760241615,
+                  "k": -2.6417787779342738
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK24",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.8885260950773954e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.8203848315170033e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16105736580326557,
+              "mrna_decay": 0.16105736580326557,
+              "protein_decay": 8.5231556004819018e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 24249.135015518867,
+                  "k": -1.589507142970908
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK25",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.0722934370860458e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.707104691886343e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15179009441903507,
+              "mrna_decay": 0.15179009441903507,
+              "protein_decay": 9.4525816854614517e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 22179.518894730834,
+                  "k": -5.7020825417506416
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK26",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.8056155433878303e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.3759474683320154e-05,
+              "abortion": 0,
+              "premrna_decay": 0.19063915464467732,
+              "mrna_decay": 0.19063915464467732,
+              "protein_decay": 1.1282192310988872e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 31871.483725413476,
+                  "k": -4.1416510423355506
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK27",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.2094515222124758e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.0183270537527279e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14574861920821788,
+              "mrna_decay": 0.14574861920821788,
+              "protein_decay": 9.4958179269723226e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 26731.855695728365,
+                  "k": -2.1276358775574677
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK28",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.8319352478720247e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.0925720469094815e-05,
+              "abortion": 0,
+              "premrna_decay": 0.1442807538418055,
+              "mrna_decay": 0.1442807538418055,
+              "protein_decay": 7.356283130812817e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK5",
+                  "at": 5392.9215540295436,
+                  "k": -1.2345499503900184
+                },
+                {
+                  "from": "HK2",
+                  "at": 24683.239651348031,
+                  "k": -2.5045093652380093
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK29",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.3582691233605149e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.7951375056290998e-05,
+              "abortion": 0,
+              "premrna_decay": 0.25956444683387175,
+              "mrna_decay": 0.25956444683387175,
+              "protein_decay": 1.2275560860433789e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 12048.782893629881,
+                  "k": -4.5261641823229173
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK30",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.3426994108594955e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.5432399170240387e-05,
+              "abortion": 0,
+              "premrna_decay": 0.1679248496587957,
+              "mrna_decay": 0.1679248496587957,
+              "protein_decay": 9.5271495032608362e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK5",
+                  "at": 6696.0059114041296,
+                  "k": -1.8176916732972792
+                },
+                {
+                  "from": "HK2",
+                  "at": 12539.79653681594,
+                  "k": -1.8461315202753936
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK31",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.0792061290703714e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.5868378881132232e-05,
+              "abortion": 0,
+              "premrna_decay": 0.22228080064161482,
+              "mrna_decay": 0.22228080064161482,
+              "protein_decay": 1.2555077123696941e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 8195.8560692893589,
+                  "k": -2.5398945286011623
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK32",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.9770247684791684e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.7907808936433869e-05,
+              "abortion": 0,
+              "premrna_decay": 0.19792339988263782,
+              "mrna_decay": 0.19792339988263782,
+              "protein_decay": 8.2837206161553676e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 30684.142020431154,
+                  "k": -1.1123698802132944
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK33",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.0738210408017039e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.1596798838581883e-05,
+              "abortion": 0,
+              "premrna_decay": 0.1485645234330096,
+              "mrna_decay": 0.1485645234330096,
+              "protein_decay": 8.4976101464851379e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 18308.703392113752,
+                  "k": -3.5827449828299613
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK34",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 2.7983796042390167e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.1335189390229067e-05,
+              "abortion": 0,
+              "premrna_decay": 0.18868984978026479,
+              "mrna_decay": 0.18868984978026479,
+              "protein_decay": 8.2962812724401892e-08
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 4013.2516376585913,
+                  "k": -1.7220937136597665
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK35",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.4034960167482496e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.3275224470999087e-05,
+              "abortion": 0,
+              "premrna_decay": 0.1697601424222851,
+              "mrna_decay": 0.1697601424222851,
+              "protein_decay": 1.1237168046478932e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 23042.950624899637,
+                  "k": -4.5164443006898853
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK36",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.7156167910434303e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.2914903176715601e-05,
+              "abortion": 0,
+              "premrna_decay": 0.17750073829214658,
+              "mrna_decay": 0.17750073829214658,
+              "protein_decay": 1.0043353897635209e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 27329.028900290195,
+                  "k": -1.4655802026677285
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK37",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.2427998706698415e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.1283368823351339e-05,
+              "abortion": 0,
+              "premrna_decay": 0.21376854861183764,
+              "mrna_decay": 0.21376854861183764,
+              "protein_decay": 1.1827089084253868e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 10008.243413816008,
+                  "k": -3.7144658729762665
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK38",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.2548601222224533e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 6.9284344738116494e-05,
+              "abortion": 0,
+              "premrna_decay": 0.22937616706149228,
+              "mrna_decay": 0.22937616706149228,
+              "protein_decay": 7.6677559383700653e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 2715.5343021177441,
+                  "k": -1.0540430024717793
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK39",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 2.6442607720382513e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.4860058525810019e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14204997315595369,
+              "mrna_decay": 0.14204997315595369,
+              "protein_decay": 1.2830033834198996e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 8519.6784800905043,
+                  "k": -1.4168286836539794
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK40",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 0,
+              "initiation": 3.7454293626360596e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.992034320370294e-05,
+              "abortion": 0,
+              "premrna_decay": 0.16447069737703701,
+              "mrna_decay": 0.16447069737703701,
+              "protein_decay": 1.0610345866890958e-07
+            },
+            "activation": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 23531.725040349862,
+                  "k": -5.1037155204971407
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK41",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.1530895046889785e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.3169895121827724e-05,
+              "abortion": 0,
+              "premrna_decay": 0.17351428492164314,
+              "mrna_decay": 0.17351428492164314,
+              "protein_decay": 8.1371793868140518e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 14515.35952271614,
+                  "k": -1.2378596299922504
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK42",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.0076299151405692e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 7.1039503463543949e-05,
+              "abortion": 0,
+              "premrna_decay": 0.14417429355087935,
+              "mrna_decay": 0.14417429355087935,
+              "protein_decay": 1.1077259929832572e-07
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 12640.317991185351,
+                  "k": -3.5624387341246657
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          },
+          {
+            "name": "HK43",
+            "base_rates": {
+              "activation": 1,
+              "deactivation": 9999,
+              "initiation": 3.854748606681824e-05,
+              "transcription": 3.6000000000000001,
+              "processing": 0.34657359027997264,
+              "translation": 5.9688043547794224e-05,
+              "abortion": 0,
+              "premrna_decay": 0.15747985613086812,
+              "mrna_decay": 0.15747985613086812,
+              "protein_decay": 9.2958893290115337e-08
+            },
+            "activation": {
+              "slots": [
+                {
+                  "from": "HK2",
+                  "at": 12233.898079178309,
+                  "k": -2.8311556848354278
+                }
+              ],
+              "aggregate": "thermodynamic"
+            },
+            "repression": {
+              "slots": [],
+              "aggregate": "thermodynamic"
+            },
+            "color": "#D3D3D3"
+          }
+        ]
+      }
+    },
+    "step": [
+      {
+        "{add}": {
+          "polymerases": 500000,
+          "ribosomes": 2000000,
+          "proteasomes": 1000000
+        }
+      },
+      {
+        "branch": true,
+        "step": {
+          "each": {
+            "start": 1,
+            "stop": {
+              "$": "num_reps"
+            }
+          },
+          "step": {
+            "to": {
+              "$": "duration"
+            },
+            "step": {
+              "$": "sample_interval"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
